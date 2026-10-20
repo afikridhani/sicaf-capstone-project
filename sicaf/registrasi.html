@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registrasi - SICAF SMK Negeri 1 Sedayu</title>
+  <link rel="icon" href="assets/img/logo-sicaf.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="auth">
+    <aside class="auth-brand">
+      <div class="brand-row">
+        <img src="assets/img/logo-sicaf.svg" alt="" />
+        <div>
+          <strong>SICAF</strong>
+          <span>SMK Negeri 1 Sedayu</span>
+        </div>
+      </div>
+
+      <div>
+        <h1>Bergabung dengan <em>SICAF</em></h1>
+        <p class="lead">Buat akun untuk mengajukan nomor surat, memantau status persetujuan, dan mengakses arsip surat Anda.</p>
+        <ul class="feature-list">
+          <li>
+            <i class="ri-user-line"></i>
+            <div><strong>Guru / Staf</strong><span>Mengajukan surat dan mengambil nomor surat.</span></div>
+          </li>
+          <li>
+            <i class="ri-briefcase-line"></i>
+            <div><strong>Admin Tata Usaha</strong><span>Memverifikasi surat dan mengelola arsip.</span></div>
+          </li>
+          <li>
+            <i class="ri-user-star-line"></i>
+            <div><strong>Kepala Sekolah</strong><span>Memberi persetujuan akhir surat.</span></div>
+          </li>
+        </ul>
+      </div>
+
+      <p class="auth-foot">&copy; 2026 SICAF &middot; Capstone Project STSI4440 Universitas Terbuka</p>
+    </aside>
+
+    <main class="auth-main">
+      <div class="auth-card wide">
+        <h2>Registrasi Akun</h2>
+        <p>Lengkapi data diri Anda.</p>
+
+        <form id="registerForm">
+          <div class="form-grid">
+            <label class="field span-2">
+              <span>Nama Lengkap</span>
+              <input name="nama_lengkap" autocomplete="name" maxlength="100" placeholder="Nama lengkap beserta gelar" required />
+            </label>
+            <label class="field">
+              <span>NIP <small>(opsional)</small></span>
+              <input name="nip" inputmode="numeric" maxlength="30" placeholder="NIP / NUPTK" />
+            </label>
+            <label class="field">
+              <span>Jabatan</span>
+              <input name="jabatan" maxlength="100" placeholder="Contoh: Guru Produktif" required />
+            </label>
+            <label class="field">
+              <span>Jenis Kelamin</span>
+              <select name="jenis_kelamin" required>
+                <option value="">Pilih</option>
+                <option value="male">Laki-laki</option>
+                <option value="female">Perempuan</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" maxlength="100" placeholder="nama@sekolah.sch.id" required />
+            </label>
+            <label class="field">
+              <span>Password</span>
+              <input type="password" name="password" autocomplete="new-password" minlength="8" placeholder="Minimal 8 karakter" required />
+            </label>
+            <label class="field">
+              <span>Konfirmasi Password</span>
+              <input type="password" name="konfirmasi" autocomplete="new-password" minlength="8" placeholder="Ulangi password" required />
+            </label>
+          </div>
+
+          <div class="notice">
+            <i class="ri-information-line"></i>
+            <span>Akun baru terdaftar sebagai <strong>Guru / Staf</strong>. Hak akses Admin Tata Usaha dan Kepala Sekolah diberikan oleh Admin.</span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block"><i class="ri-user-add-line"></i> Daftar</button>
+        </form>
+
+        <p class="auth-switch">Sudah punya akun? <a href="login.html">Masuk di sini</a></p>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
