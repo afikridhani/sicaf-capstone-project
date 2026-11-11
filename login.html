@@ -56,13 +56,16 @@
               <input type="email" name="email" autocomplete="email" placeholder="nama@sekolah.sch.id" required />
             </div>
           </label>
-          <label class="field">
-            <span>Password</span>
-            <div class="input-icon">
-              <i class="ri-lock-2-line"></i>
-              <input type="password" name="password" autocomplete="current-password" placeholder="Masukkan password" required />
-            </div>
-          </label>
+         <label class="field">
+  <span>Password</span>
+  <div class="input-icon">
+    <i class="ri-lock-2-line"></i>
+    <input type="password" id="password" name="password" autocomplete="current-password" placeholder="Masukkan password" required />
+    <button type="button" id="togglePassword" class="toggle-password" aria-label="Tampilkan password">
+      <i class="ri-eye-line"></i>
+    </button>
+  </div>
+</label>
           <button type="submit" class="btn btn-primary btn-block"><i class="ri-login-box-line"></i> Masuk</button>
         </form>
 
